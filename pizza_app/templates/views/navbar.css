@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Audiowide&family=Baloo+2:wght@500&family=Comfortaa:wght@400;500;700&family=Fredoka+One&family=Grand+Hotel&family=Homemade+Apple&family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,500;1,300;1,900&family=Nunito:ital,wght@0,300;0,400;1,600&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins:wght@100;300&family=Prompt:ital,wght@0,400;1,300&family=Racing+Sans+One&family=Rubik+Marker+Hatch&family=Secular+One&family=Syncopate&family=Ubuntu:wght@700&family=Yantramanav:wght@500&display=swap"); @media only screen and (max-width: 2000px) {
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+        user-select: none;
+    }
+
+    body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease 0s;
+    }
+
+    .container {
+        margin-top: 0.1rem;
+        width: 100%;
+        max-width: 2000px;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2rem;
+    }
+
+    .subcontainer {
+        margin-top: 5rem;
+    }
+
+    .nav-section {
+        position: relative;
+        top: 2.5rem;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        box-shadow: black 2.1rem 1.1rem 2rem;
+        justify-content: center;
+    }
+
+    .navbar {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        width: 100%;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        position: fixed;
+        background: red;
+        box-shadow: black 0.1rem 0.1rem 1rem;
+        z-index: 10;
+    }
+
+    .navbar .logo {
+        width: 7rem;
+        height: 7rem;
+        padding: 1rem;
+        /* gap: 1rem; */
+        margin-left: 6rem;
+        margin-top: 1rem;
+
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    .navbar .logo:hover {
+        transform: scale(1.2);
+    }
+
+    .navbar .logo img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .nav-tabs {
+        right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+    }
+
+    .nav-tabs .nav_tabs1 .tabs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: all 0.5s ease-in 0s;
+    }
+
+    .nav-tabs .nav_tabs1 .tabs a:hover {
+        color: yellow;
+    }
+
+    .nav-tabs .nav_tabs1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-tabs .nav_tabs2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .nav-tabs .nav_tabs2 i {
+        font-size: 1.4rem;
+        transition: all 0.5s ease-in 0s;
+    }
+
+    .nav-tabs .nav_tabs2 a:hover i {
+        color: yellow;
+        transform: scale(1.3);
+    }
+    .nav-tabs .nav_tabs2 .cart {
+        position: relative;
+    }
+    .nav-tabs .nav_tabs2 .cart .cart_adding{
+        position: absolute;
+        top: -.5rem;
+        left: .1rem;
+        width: .8rem;
+        text-align: center;
+        color: rgb(0 0 0);
+        background: yellow;
+        font-weight: 900;
+        /* padding: .23em; */
+        border-radius: 50%;
+        font-size: .6rem;
+        height: .8rem;
+    }
+    .nav-tabs .nav_tabs2 .del_img {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: yellow;
+    }
+
+    .nav-tabs .nav_tabs2 .del_img img {
+        position: absolute;
+        left: 1.5rem;
+        top: 1rem;
+        width: 3rem;
+        transition: all 0.5s ease-in 0s;
+        filter: saturate(50%);
+    }
+
+    .nav-tabs .nav_tabs2 .del_img:hover img {
+        left: 0.5rem;
+    }
+
+    .nav-tabs .nav_tabs2 .contact {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-tabs .nav_tabs2 p {
+        font-size: 0.8rem;
+        position: relative;
+        top: 1rem;
+        color: yellow;
+    }
+
+    .nav-tabs a {
+        font-family: Poppins, sans-serif;
+        font-size: 1rem;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem 0px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    .nav-tabs a:hover {
+        color: yellow;
+        font-weight: 900;
+    }
+
+    .bars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bars .cart,.user,.res_logo {
+        display: none;
+    }
+
+    .toggle-bar1, .toggle-bar2 {
+        font-size: 1.5rem;
+        color: whitesmoke;
+        position: absolute;
+        right: 2rem;
+        display: none;
+    }
+
+    .toggle-bar1 {
+        display: none;
+    }
+
+    .toggle-bar2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar .logo {
+        margin-left: 1rem;
+    }
+
+    .nav-tabs .nav_tabs1 .tabs {
+        gap: 1rem;
+    }
+
+    .nav-tabs .nav_tabs2 {
+        gap: 1rem;
+    }
+
+    .nav-tabs .nav_tabs2 i {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .navbar {
+        transition: all 0.5s ease-in-out 0s;
+        overflow: visible;
+    }
+
+    .fa-solid, .fas {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        top: 1rem;
+        font-size: 1.5rem;
+        position: relative;
+        color: whitesmoke;
+    }
+
+    .fa-solid, .fas {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .toggle-bar1 {
+        display: block;
+    }
+
+    .nav-tabs {
+        transition: all 0.5s ease-in-out 0s;
+        display: flex;
+        flex-wrap: wrap;
+        height: 20rem;
+        overflow: hidden;
+        width: 11rem;
+        background: red;
+        position: absolute;
+        top: 7rem;
+        z-index: 11;
+        right: -20rem;
+        border-radius: 1rem;
+    }
+
+    .nav-tabs .nav_tabs1 .tabs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0rem;
+    }
+
+    .nav-tabs .nav_tabs2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-tabs .nav_tabs2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .nav-tabs a {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0.1rem;
+        color: white;
+    }
+
+    .nav-tabs .nav_tabs2 i {
+        font-size: 2rem;
+        display: none;
+        color: whitesmoke;
+       
+    }
+
+    .nav_tabs2 .cart,.user,.res_logo {
+        display: none;
+
+    }
+    .bars .nav_ico i{
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+    }
+    
+    .bars .cart {
+        display: block;
+        position: absolute;
+        right: 10rem;
+
+    }   
+    .bars .cart {
+        display: block;
+        position: absolute;
+        right: 10rem;
+
+    }   
+    .bars .res_logo {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        border-radius: 50%;
+        /* background-color: #fff; */
+        top: 1rem;
+        width: 7rem;
+        height: 7rem;
+        overflow: hidden;
+
+
+    }   
+    .bars .res_logo img{
+        width: 100%;
+        height: 100%;
+    }
+     .bars .nav_ico:hover i{
+        color: yellow;
+        transform: scale(1.3);
+    }
+    .cart .cart_adding{
+        position: absolute;
+        left: -.3rem;
+        position: absolute;
+        top: -.1rem;
+        width: .8rem;
+        text-align: center;
+        color: rgb(0 0 0);
+        background: yellow;
+        font-weight: 900;
+        /* padding: .23em; */
+        border-radius: 50%;
+        font-size: .6rem;
+        height: .8rem;
+    }
+    .user {
+        display: block;
+        position: absolute;
+        right: 6rem;
+    }
+}

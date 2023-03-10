@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>To do app</h1>
+        <form action="/" method="post" class="todo_app">
+            <h3 class="msg">
+                <%=msg%>
+            </h3>
+            <div class="fields">
+                <label for="">Title:</label>
+                <input type="text" name="title" placeholder="enter title" required>
+
+            </div>
+            <div class="fields">
+                <label for="">description:</label>
+                <textarea name="description" id="" cols="30" rows="10" required></textarea>
+
+            </div>
+            <button class="add_btn">Add</button>
+        </form>
+
+    </div>
+    <div class="display_list">
+
+
+        <div class="label ">
+            <div>date</div>
+            <div>title</div>
+            <div>description</div>
+            <div>action</div>
+        </div>
+        <% result.forEach(function(itm,i){ %>
+
+
+            <div class="display_card">
+                <!-- <input class=date type="date" name="date" readonly> -->
+                <input type="text" name="date" value='<%=result[i].date %>' readonly>
+                <input type="text" name="title" value='<%=result[i].title %>' readonly>
+                <textarea name="description" id="" cols="30" rows="10" value=''
+                    readonly><%=result[i].discription %></textarea>
+                <div class="btns"><button class="btn dlt_btn"><a
+                            href="/delete?id=<%=result[i]._id%>">delete</a></button>
+                    <button class="btn "> <a class="edit_btn" href="/edit?id=<%=result[i]._id %>">edit</a>
+                    </button>
+                </div>
+
+            </div>
+            <% }); %>
+
+
+    </div>
+    </div>
+    <!-- <div class="container2">
+        <% result.forEach(function(itm,i){ %>
+
+            <form action="/saved" method="post" class="todo_app update_card">
+                <div class="fields">
+                    <label for="">Title:</label>
+                    <input type="text" name="title" placeholder="enter title" value='<%=result[i].title %>' required>
+
+                </div>
+                <div class="fields">
+                    <label for="">description:</label>
+                    <textarea name="description" id="" cols="30" rows="10"
+                        required><%=result[i].discription %></textarea>
+
+                </div>
+                <div class="btns">
+
+                    <button class="save_btn"> Save</button>
+                    <button class="save_btn"><a href="/">cancel</a> </button>
+                </div>
+            </form>
+            <% }); %>
+
+    </div> -->
+
+</body>
+<script src="script.js"></script>
+
+</html>

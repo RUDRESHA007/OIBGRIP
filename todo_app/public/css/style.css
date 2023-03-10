@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Audiowide&family=Baloo+2:wght@500&family=Comfortaa:wght@400;500;700&family=Fredoka+One&family=Grand+Hotel&family=Homemade+Apple&family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,500;1,300;1,900&family=Nunito:ital,wght@0,300;0,400;1,600&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins:wght@100;300&family=Prompt:ital,wght@0,400;1,300&family=Racing+Sans+One&family=Rubik+Marker+Hatch&family=Secular+One&family=Syncopate&family=Ubuntu:wght@700&family=Yantramanav:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    /* background-color: yellow; */
+    overflow: hidden;
+    background-color: #6c6868;
+    font-family: Poppins, sans-serif;
+
+  background-image: url(bg.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    /* background-color: #6c6868; */
+    /* background: rgb(67, 66, 66); */
+
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rgb(30, 30, 30); */
+    flex-direction: column;
+  
+    padding: 2rem;
+}
+
+.container h1 {
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: aqua;
+    border-bottom: .2rem solid rgb(6, 205, 255);
+    margin-bottom: 2rem;
+}
+
+.todo_app {
+    width: 25rem;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background: rgb(15 125 170 / 24%);
+    /* grid-column: ; */
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: rgb(0, 0, 0) .1rem .1rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.msg{
+    color: whitesmoke;
+    background-color: rgba(35, 255, 35, 0.144);
+    padding: .5rem;
+    position: absolute;
+    border-radius: .5rem;
+    top:.3rem;
+    transition: 1s ease;
+    /* animation: rud 4s  ease  alternate; */
+    
+}
+
+.fields {
+    width: 100%;
+    /* height: ; */
+    /* text-align: center; */
+    flex-direction: column;
+    /* padding: 2rem; */
+    display: flex;
+    /* align-items: center; */
+    gap: .5rem;
+    justify-content: space-around;
+    /* margin: 1rem; */
+}
+
+.fields label {
+    font-family: Ubuntu, sans-serif;
+    padding: 0.7rem;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.fields input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    background-color: #123a4bb8;
+    color: whitesmoke;
+    border: 2px solid rgb(25 199 242);
+    box-shadow: rgba(0, 0, 0, 0.616) 9px 9px 20px;
+}
+
+.fields textarea {
+    color: whitesmoke;
+    padding: 1rem;
+    font-size: 1rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    background-color: #123a4bb8;
+    border: 2px solid rgb(44 122 159);
+    box-shadow: rgba(0, 0, 0, 0.616) 9px 9px 20px;
+}
+
+.todo_app button:hover {
+    background-color: rgb(82, 76, 76);
+
+
+}
+.todo_app .add_btn {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    width: 7rem;
+    height: 2rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    color: rgb(245, 245, 245);
+    font-size: 1.3rem;
+    /* width: 5rem; */
+    /* margin-left: 2rem; */
+    padding: .15rem;
+    background-color: rgb(18 58 75);
+    border: 2px solid rgb(6 205 255);
+    border-radius: .2rem;
+    transition: .2s ease;
+}
+
+.display_list {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    overflow: scroll;
+    /* background-color: yellow; */
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: .1rem;
+    /* margin-top: 2rem; */
+    /*  */
+
+}
+
+.label {
+    position: fixed;
+    top: 28rem;
+    text-transform: capitalize;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* flex-direction: column; */
+    padding: 0.5rem;
+    width: 60%;
+    height: 2rem;
+    /* background: rgb(67, 66, 66); */
+    gap: 2rem;
+    font-weight: 800;
+    color: aqua;
+}
+
+.display_card {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* flex-direction: column; */
+    padding: 0.5rem;
+    width: 60%;
+    height: 5rem;
+    /* background: rgb(67, 66, 66); */
+    gap: 1rem
+}
+
+.display_card label {
+    font-family: Ubuntu, sans-serif;
+    padding: 1rem;
+    width: 100%;
+    color: rgb(227, 247, 50);
+    font-size: 1.3rem;
+}
+
+.display_card input::placeholder {
+    color: whitesmoke;
+}
+
+.display_card textarea::placeholder {
+    color: whitesmoke;
+}
+.display_card .date{
+    width: 30%;
+    color: whitesmoke;
+}
+.display_card input {
+    background-color: #123a4bbf;
+    /* width: 20rem; */
+    height: 100%;
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    color: whitesmoke;
+}
+
+.display_card textarea::-webkit-scrollbar {
+    display: hidden;
+}
+
+.display_card textarea {
+    background-color: #123a4bbf;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    color: whitesmoke;
+}
+
+.btns {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+.dlt_btn{
+    border: 2px solid rgb(46, 228, 235);
+}
+a{
+    color:whitesmoke;
+    font-size: 1.1rem;
+
+}
+.btn:hover {
+    background-color: rgb(82, 76, 76);
+
+
+} 
+.btn {
+    width: 6rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    width: 5rem;
+    /* margin-left: 2rem; */
+    padding: .2rem;
+    background-color: #123a4b;
+    color: white;
+    border: 2px solid rgb(6 205 255);
+    border-radius: .2rem;
+    transition: .2s ease;
+}
+
+.container2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #ffffff00;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+
+}
+.update_card{
+    position: absolute;
+    width: 30rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background: rgb(15 125 170 / 24%);
+    /* grid-column: ; */
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: rgb(0, 0, 0) .1rem .1rem 1rem;
+    position: relative;
+    overflow: hidden;
+    gap: 1rem;
+}
+.update_card .fields label {
+    font-size: 1.rem;
+}
+
+.update_card .fields input {
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+   
+
+}
+
+.update_card .fields textarea {
+   
+    font-size: 1rem;
+    height: 7rem;
+    
+
+}
+.update_card .btns {
+    width: 100%;
+    justify-content: space-evenly;
+}
+.id{
+    display: none;
+}
+.update_card .save_btn {
+    font-size: .8rem;
+    margin-top: 1rem;
+    width: 9rem;
+    height: 2rem;
+font-weight: 600;
+   
+    font-size: 1rem;
+   
+}

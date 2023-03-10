@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Audiowide&family=Baloo+2:wght@500&family=Comfortaa:wght@400;500;700&family=Fredoka+One&family=Grand+Hotel&family=Homemade+Apple&family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,500;1,300;1,900&family=Nunito:ital,wght@0,300;0,400;1,600&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins:wght@100;300&family=Prompt:ital,wght@0,400;1,300&family=Racing+Sans+One&family=Rubik+Marker+Hatch&family=Secular+One&family=Syncopate&family=Ubuntu:wght@700&family=Yantramanav:wght@500&display=swap");
+
+@media only screen and (max-width: 2000px) {
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+        user-select: none;
+        font-family: Poppins, sans-serif;
+
+    }
+
+    body {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease 0s;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 2000px;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        /* border-radius: 2rem; */
+        background-color: rgb(26 35 46);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .container h1 {
+        width: 30%;
+        height: 3.5rem;
+        /* padding: 1rem; */
+        text-align: center;
+        color: #e99402;
+        text-transform: uppercase;
+        border-bottom: .2rem solid #9d00ff;
+
+    }
+
+    .container .calculator {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 25rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: #1a232e;
+        height: 25rem;
+        box-shadow: 0.1rem 0.1rem 1rem rgb(0, 0, 0);
+    }
+
+    .container .calculator .display {
+        width: 100%;
+        padding: 1rem;
+        height: 6rem;
+        background-color: #1a232e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+    }
+
+    .container .calculator .display .display_screen {
+        background-color: #18212c;
+        color: whitesmoke;
+        width: 100%;
+        height: 100%;
+        border: .01rem solid rgb(255 255 255 / 13%);
+        outline: none;
+        /* border-top-left-radius: .5rem; */
+        /* border-bottom-left-radius: .5rem; */
+        border-radius: .5rem;
+        font-size: 2rem;
+        padding: 1rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+        text-align: right;
+    }
+
+    .container .calculator .display .btn {
+        width: 15%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
+        color: rgb(255, 0, 0);
+        /* background-color: #454141; */
+    }
+
+    .container .calculator .number_section {
+        width: 100%;
+        height: 100%;
+        background-color: #1a232e;
+        display: flex;
+        /* gap: 1rem; */
+        border-radius: .5rem;
+        padding: 1rem;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        /* padding: .5rem; */
+    }
+
+    .container .calculator .number_section .numbers {
+        width: 70%;
+        height: 100%;
+        background-color: #1a232e;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        align-items: center;
+        justify-content: space-evenly;
+        /* padding: .5rem; */
+        transition: .5s ease-out;
+
+    }
+
+    .container .calculator .number_section .numbers .equls {
+        /* padding: 1rem; */
+        font-size: 2.2rem;
+        background-color: #9d00ff;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .container .calculator .number_section .numbers .equls:hover {
+        background-color: #057687;
+
+    }
+
+    .container .calculator .number_section .operators {
+        width: 30%;
+        height: 100%;
+        background-color: #1a232e;
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+        padding: 0.5rem;
+        /* border-radius: 2.5rem; */
+    }
+
+    .container .calculator .number_section .operators input {
+        width: 100%;
+        height: 30%;
+        font-size: 1.5rem;
+        font-weight: 800;
+        background: #2a3644;
+        color: whitesmoke;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        transition: .5s ease-out;
+        cursor: pointer;
+
+    }
+
+    .container .calculator .number_section .operators .clear {
+        height: 100%;
+        background-color: #e99402c9;
+    }
+
+    .container .calculator .number_section .operators .clear:hover {
+        background-color: #ffa200;
+    }
+
+    .container .calculator .number_section .numbers input {
+        width: 5rem;
+        height: 3rem;
+        border-radius: .4rem;
+        font-size: 1.1rem;
+        color: whitesmoke;
+        font-weight: 900;
+        background: #2a3644;
+        border: none;
+        outline: none;
+        transition: .5s ease-out;
+        cursor: pointer;
+
+
+    }
+
+    .container .calculator .number_section .numbers input:hover {
+        background: #4d6075cd;
+
+    }
+
+    .container .calculator .number_section .operators input:hover {
+        background: #4d6075cd;
+
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .container h1 {
+        width: 78%;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .container .calculator {
+        width: 17rem;
+        height: 20rem;
+    }
+
+    .container .calculator .display {
+        padding: 1rem;
+        height: 5rem;
+    }
+
+    .container .calculator .display .display_screen {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .container .calculator .display .btn {
+        font-size: 1.2rem;
+    }
+
+    .container .calculator .number_section .numbers .equls {
+        font-size: 1.5rem;
+    }
+
+    .container .calculator .number_section .operators input {
+        font-size: 1rem;
+    }
+
+    .container .calculator .number_section .numbers input {
+        width: 3rem;
+        height: 2rem;
+        font-size: .8rem;
+    }
+
+
+}

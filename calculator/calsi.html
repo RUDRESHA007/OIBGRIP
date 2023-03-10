@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calsi.css">
+
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" class="display_screen" readonly value="0">
+                <h1 class="operator btn"><i class="fa-solid fa-delete-left"></i></h1>
+
+                <!-- <h1></h1> -->
+            </div>
+            <div class="number_section">
+                <div class="numbers">
+                    <input type="button" value="1" class="number">
+                    <input type="button" value="2" class="number">
+                    <input type="button" value="3" class="number">
+                    <input type="button" value="4" class="number">
+                    <input type="button" value="5" class="number">
+                    <input type="button" value="6" class="number">
+                    <input type="button" value="7" class="number">
+                    <input type="button" value="8" class="number">
+                    <input type="button" value="9" class="number">
+
+                    <input type="button" value="." class="number">
+                    <input type="button" value="0" class="number">
+                    <input type="button" class='equls operator' value="=">
+
+
+                </div>
+                <div class="operators">
+                    <input type="button" value="+" class="operator">
+                    <input type="button" value="-" class="operator">
+                    <input type="button" value="/" class="operator">
+                    <input type="button" value="*" class="operator">
+                    <!-- <input type="button" value="%" class="operator"> -->
+                    <input type="button" value="CL" class="operator clear">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="calsi.js"></script>
+
+</html>

@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Audiowide&family=Baloo+2:wght@500&family=Comfortaa:wght@400;500;700&family=Fredoka+One&family=Grand+Hotel&family=Homemade+Apple&family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,500;1,300;1,900&family=Nunito:ital,wght@0,300;0,400;1,600&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins:wght@100;300&family=Prompt:ital,wght@0,400;1,300&family=Racing+Sans+One&family=Rubik+Marker+Hatch&family=Secular+One&family=Syncopate&family=Ubuntu:wght@700&family=Yantramanav:wght@500&display=swap");
+
+@media only screen and (max-width: 2000px) {
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+        user-select: none;
+    }
+
+    body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease 0s;
+        background: rgb(240, 206, 53);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    section {
+        margin-top: 1rem;
+        padding: 2rem;
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .home-section {
+        overflow: hidden;
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .profile {
+        width: 100%;
+        /* line-heig    ht: 2rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        color: whitesmoke;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        gap: .8rem;
+        /* background-color: #fff; */
+
+    }
+
+    .profile span {
+        color: #2b40c9;
+    }
+
+    .profile h1,
+    h3 {
+        line-height: 2.5rem;
+    }
+
+    .profile button {
+        width: 7rem;
+        background-color: #6b4ced;
+        padding: .4rem;
+        font-size: .9rem;
+        border: none;
+        border-radius: 1rem;
+        transition: .5s ease-in-out;
+
+    }
+
+    .profile button:hover {
+        background-color: #f9bb30;
+    }
+
+    .profile button a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    .profile .social-media {
+        font-size: 1.7rem;
+        padding: 1rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .profile .social-media a {
+        text-decoration: none;
+        color: #927bed;
+        transition: .5s ease;
+
+    }
+
+    .profile .social-media a:hover {
+        text-decoration: none;
+        color: #5f3bef;
+        transform: scale(1.3);
+
+    }
+
+
+    .home-section .image {
+        width: 55rem;
+        /* height: 25rem; */
+        /* background-color: rgb(94, 43, 43); */
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        ;
+        /* background-color: #fff; */
+       display: flex; 
+       align-items: center;
+       justify-content: center;
+       margin-right:-15rem ;
+    }
+
+    .home-section .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-section .image:hover {
+    transform: scale(1.05);
+}
+
+}
+@media only screen and (max-width: 425px) {
+    .container .slider-container {
+        right: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .home-section{
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+    }
+    .profile{
+        width: 100%;
+    }
+    .image {
+        width: 20rem;
+        height: 30rem;
+        /* margin-right:15rem ; */
+    }
+    .contact-section form{
+        width: 100%;
+    }
+    .contact-section form .field{
+        width: 100%;
+        padding: 0rem;
+
+    }
+    input,textarea,label{
+        width: 90%;
+    }
+    .profile h1 {
+        line-height: 2.5rem;
+        font-size: 1.6rem;
+    }
+    .about-me-section .description BUTTON {
+        width: 71%;
+    }
+    .project-section .projects .project {
+        width:16rem;
+    }
+    .footer p{
+        font-size: .7rem;
+        line-height: 1.1rem;
+    }
+    .footer {
+        gap:1rem;
+    }
+    
+
+
+}

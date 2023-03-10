@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Audiowide&family=Baloo+2:wght@500&family=Comfortaa:wght@400;500;700&family=Fredoka+One&family=Grand+Hotel&family=Homemade+Apple&family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,500;1,300;1,900&family=Nunito:ital,wght@0,300;0,400;1,600&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins:wght@100;300&family=Prompt:ital,wght@0,400;1,300&family=Racing+Sans+One&family=Rubik+Marker+Hatch&family=Secular+One&family=Syncopate&family=Ubuntu:wght@700&family=Yantramanav:wght@500&display=swap");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    scroll-behavior: smooth;
+    /* background-color: yellow; */
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(30, 30, 30);
+    flex-direction: column;
+    background-image: url(bg.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.calculator{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    width: 25rem;
+    height: 30rem;
+    /* padding: 1rem; */
+    background-color: #111111d0;
+    border-radius: 1rem    ;
+    box-shadow: .1rem .1rem 1rem .3rem rgb(104, 103, 103);
+
+}
+.container h1{
+    color: rgb(39, 175, 209);
+    text-transform: capitalize;
+    padding: 1rem 0;
+    border-bottom: .3rem solid rgb(21, 144, 146);
+    text-align: center;
+    width: 25%;
+    font-family: Poppins, sans-serif;
+
+}
+
+
+.result_board
+{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111d0;
+    border: none;
+    border-bottom:.3rem solid rgb(255, 255, 255);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-transform: uppercase;
+}
+.result_board h2{
+    color: whitesmoke;
+    font-family: Poppins, sans-serif;
+
+}
+.calsi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.fields{
+    padding: 2rem;
+    width: 100%;
+    height: 3rem;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    font-family: Ubuntu, sans-serif;
+
+
+}
+input::placeholder{
+    font-size: 1.5rem;
+}
+option{
+    background-color: black;
+}
+select{
+    width: 50%;
+}
+.btns{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+
+    align-items: center;
+justify-content: space-around;
+}
+#btn{
+    text-align: center;
+    height: 2.5rem;
+    width: 8rem;
+    font-family: Ubuntu, sans-serif;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+label{
+    font-family: Ubuntu, sans-serif;
+
+    width: 40%;
+    color: whitesmoke;
+}
+select,.value{
+    
+    font-size: 1rem;
+color: whitesmoke;
+    width: 60%;
+    height: 2.5rem;
+    padding:0 1rem ;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    background-color: #6c696960;
+}
+#btn{
+    background-color: #2123b2bb;
+    color: whitesmoke;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    transition: .5s ease-in;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #2123b271;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .calculator{
+        width: 17rem;
+        height: 25rem;
+}
+ .container h1{
+    font-size: 1rem;
+    width: 80%;
+}
+.result_board h2 {
+    font-size:1.2rem;
+}
+#btn {
+    font-size: .8rem;
+    height: 1.7rem;
+}
+option{
+    font-size: .5rem;
+    background-color: black;
+}
+label{
+    font-size: .8rem;
+}
+select .value {
+    font-size: .8rem;
+    color: whitesmoke;
+    width: 60%;
+    height: 1.8rem;
+}
+}

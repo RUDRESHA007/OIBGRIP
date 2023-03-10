@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Audiowide&family=Baloo+2:wght@500&family=Comfortaa:wght@400;500;700&family=Fredoka+One&family=Grand+Hotel&family=Homemade+Apple&family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,500;1,300;1,900&family=Nunito:ital,wght@0,300;0,400;1,600&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins:wght@100;300&family=Prompt:ital,wght@0,400;1,300&family=Racing+Sans+One&family=Rubik+Marker+Hatch&family=Secular+One&family=Syncopate&family=Ubuntu:wght@700&family=Yantramanav:wght@500&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   scroll-behavior: smooth;
+   font-family: Poppins, sans-serif;
+
+}
+
+.container {
+   width: 100%;
+   /* height:0rem; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url(https://images.unsplash.com/photo-1653503873090-345317938c16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHw%3D&w=1000&q=80);
+   /* background-color: #514f4f; */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.triute_page {
+   width: 100rem;
+   height: 100%;
+   /* margin-top: 6rem; */
+   margin: 6rem;
+   padding: 4rem;
+   /* overflow: hidden; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: #ffffffa7;
+   box-shadow: .1rem .1rem 2rem black;
+   border-radius: 1rem;
+
+}
+
+.triute_page h1 {
+   width: 40%;
+   text-align: center;
+   color: rgb(83, 79, 79);
+   padding: 1rem;
+   border-bottom: .2rem solid rgb(83, 79, 79);
+}
+
+
+.photo {
+   width: 25rem;
+   height: 25rem;
+   overflow: hidden;
+   border-radius: 1rem;
+   border: 1rem solid rgb(87, 79, 79);
+}
+
+.photo img {
+   width: 100%;
+   height: 100%;
+}
+
+.about {
+   width: 100%;
+   height: 100%;
+}
+
+.about h1 {
+   width: 100%;
+   margin-top: 3rem;
+   /* padding: 0rem; */
+   text-align: center;
+   color: rgb(255, 115, 0);
+   border: none;
+}
+
+h2 {
+   text-transform: capitalize;
+   width: 100%;
+   padding: .5rem;
+   color: rgb(255, 115, 0);
+   border-bottom: .2rem solid rgb(255, 115, 0);
+   margin: 1rem;
+}
+
+p {
+   padding: 2rem;
+   line-height: 2rem;
+   font-weight: 600;
+}
+
+span {
+   font-size: 1.5rem;
+   font-weight: 900;
+}
+
+
+@media only screen and (max-width: 425px) {
+   .photo {
+      width: 14rem;
+      height: 14rem;
+
+   }
+
+   .triute_page {
+
+      margin: 1rem;
+      padding: 1rem;
+   }
+
+   .triute_page h1 {
+      width: 75%;
+      font-size: 1rem;
+   }
+
+   .about h1 {
+      margin-top: 1rem;
+      width: 100%;
+   }
+
+   p {
+      padding: 0.8rem;
+   }
+
+   span {
+      font-size: 1rem;
+   }
+
+   h2 {
+
+      font-size: 1rem;
+   }
+}

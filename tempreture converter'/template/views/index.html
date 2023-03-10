@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>tempreture converter</h1>
+        <div class="calculator">
+            <div class="result_board">
+                <h2>
+                    <%=result%>
+                </h2>
+            </div>
+            <form method="post" action='/' class="calsi">
+                <div class="fields"><label for="value">Enter value:</label>
+                    <input class="value" type="number" id="value" name="value" value="0">
+                </div>
+                <div class="fields"><label for="">From:</label>
+                    <select class="from" name="from_degree" id="">
+                        <option value="none">--select option--</option>
+                        <option value="f">Fahrenheit (°F)</option>
+                        <option value="c">Celsius (°C)</option>
+                        <option value="k">Kelvin (K)</option>
+                    </select>
+                </div>
+                <div class="fields"><label for="a">To:</label>
+                    <select class="to" name="to_degree" id="a">
+                        <option value="none">--select option--</option>
+                        <option value="f">Fahrenheit (°F)</option>
+                        <option value="c">Celsius (°C)</option>
+                        <option value="k">Kelvin (K)</option>
+                    </select>
+                </div>
+
+
+
+
+
+                <div class="fields btns">
+                    <input type="reset" id='btn' value="Clear">
+                    <button id="btn">calculate</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
