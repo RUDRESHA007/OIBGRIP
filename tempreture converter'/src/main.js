@@ -38,6 +38,7 @@ app.post('/', (req, res) => {
 
 
     // calculation part
+
     if (from_degree == 'f' && to_degree == 'c') {
         const farcel = (value - 32) * 5 / 9
         console.log(farcel)

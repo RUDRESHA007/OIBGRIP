@@ -1,4 +1,4 @@
-
+//mongodb connection with mongodb atlas ....
 const mongoose = require('mongoose');
 
 try{

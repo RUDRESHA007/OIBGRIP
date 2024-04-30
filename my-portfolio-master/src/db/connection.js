@@ -1,4 +1,4 @@
-
+//mongodb for database
 const mongoose = require('mongoose');
 
 try{

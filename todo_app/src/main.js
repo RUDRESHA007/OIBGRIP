@@ -5,9 +5,11 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const ejs = require('ejs')
 const url = require('url')
+
 //data base connectionie mongodb
 require('./db/connection')
 mongoose.set('strictQuery', true);
+
 //body parser initialization
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -37,6 +39,7 @@ app.get('/', (req, res) => {
 
     });
 })
+//home
 app.post('/', (req, res) => {
     const title = req.body.title
     const description = req.body.description
@@ -59,6 +62,7 @@ app.post('/', (req, res) => {
         console.log(title.length);
     }
     else {
+        //setup current date 
         const dates = new Date();
         const date = dates.getDate()
         const month = dates.getMonth() + 1
@@ -82,6 +86,8 @@ app.post('/', (req, res) => {
     }
     // res.redirect('/')
 })
+
+//delete section
 app.get('/delete', (req, res) => {
     const db = mongoose.connection;
     const queryObject = url.parse(req.url, true).query;
@@ -99,6 +105,7 @@ app.get('/delete', (req, res) => {
         console.log(r);
     });
 })
+//edit section
 app.get('/edit', (req, res) => {
     const db = mongoose.connection;
     const queryObject = url.parse(req.url, true).query;
@@ -112,7 +119,7 @@ app.get('/edit', (req, res) => {
         res.render('edit', { result: result })
     });
 });
-
+//when click save button then the data will be updated
 app.get('/saved', (req, res) => {
     const db = mongoose.connection;
 
@@ -143,7 +150,7 @@ app.get('/saved', (req, res) => {
 });
 // })
 
-app.listen(3000, (req, res) => {
+app.listen(4000, (req, res) => {
 
     console.log('connected 3000');
 })
